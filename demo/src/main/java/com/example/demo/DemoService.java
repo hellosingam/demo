@@ -12,9 +12,14 @@ public class DemoService {
 	@Autowired
 	DemoUtil util;
 	
+	@RequestMapping("/")
+	public String getDemoDefaultMsg() {
+		return "<center> welcome to spring boot default page. </center>";
+	}
+	
 	@RequestMapping("/demo")
 	public String getDemoMsg() {
-		return "welcome to spring boot demo application.";
+		return "<center> welcome to spring boot demo application.</center>";
 	}
 	
 	@RequestMapping("/demos")
