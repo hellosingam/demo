@@ -55,6 +55,16 @@ public class Demo {
 	public void setStatus(String status) {
 		this.status = status;
 	}
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Demo [id=" + id + ", name=" + name + ", status=" + status + "]";
+	}
+	
+	
 	
 	
 
